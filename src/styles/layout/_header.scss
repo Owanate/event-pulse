@@ -1,0 +1,74 @@
+.header {
+    padding-block-start: 1em;
+    padding-block-end: 0em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    background: url('../../../public/home-hero.jpg') center center/cover no-repeat;
+    color: $light-grey;
+}
+
+.logo {
+    color: $light-grey;
+    font-weight: 600;
+    font-size: 1.5rem;
+    span {
+        color: $brand-color;
+    }
+
+    @include on-event {
+        border: 3px solid $brand-color;
+        border-radius: 0.3em;
+    }
+}
+
+.navbar {
+    display: none;
+
+    @media (min-width: 600px) {
+        display: block;
+    }
+}
+.navbar--visible {
+    display: block;
+    position: absolute;
+    top: 3em;
+    width: 90%;
+    padding: 0.7em 1em;
+    @include background;
+}
+
+.nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        gap: 1.3em;
+    }
+}
+
+.nav-item {
+    padding-block-end: 0.6em;
+
+    &:last-child {
+        padding-block-end: 0em;
+    }
+
+    @media (min-width: 600px) {
+        padding-block-end: 0em;
+    }
+}
+.nav-link {
+    color: $light-grey;
+    font-weight: 600;
+
+    @include on-event {
+        background-color: $brand-color;
+        padding: 0.3em;
+        border-radius: 0.3em;
+    }
+}

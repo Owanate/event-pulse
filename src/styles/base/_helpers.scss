@@ -1,0 +1,22 @@
+body {
+    background-color: $light-grey;
+}
+.container {
+    width: min(100% - 3rem, 75rem);
+    margin-inline: auto;
+    padding-block: 1.7em;
+
+    @media (min-width: 600px) {
+        width: min(100% - 7rem, 75rem)
+    }
+}
+
+.flex {
+	display: flex;
+	gap: 1em;
+}
+
+.grid {
+	display: grid;
+	gap: 2rem;
+}

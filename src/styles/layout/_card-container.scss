@@ -1,0 +1,5 @@
+.card-container {
+    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+    margin-block-start: 0.8em;
+    justify-content: center;
+}
