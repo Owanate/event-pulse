@@ -1,0 +1,51 @@
+.footer {
+    background-color: $background-color;
+    color: $light-grey;
+    .grid {
+        justify-content: center;
+        gap: 0.5em;
+    }
+    .logo {
+        text-align: center;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .flex {
+        align-items: center;
+    }
+}
+
+.footer-link {
+    color: $light-grey;
+    font-weight: 600;
+    font-size: 1rem;
+
+    @include on-event {
+        background-color: $brand-color;
+        padding: 0.3em;
+        border-radius: 0.3em;
+    }
+    @media (min-width: 600px) {
+        font-size: 1.3rem;
+    }
+}
+hr.line{
+    border: 1px solid  $mid-grey;
+}
+.footer-end {
+    flex-direction: column;
+    text-align: center;
+    @media(min-width: 600px) {
+        flex-direction: row;
+        text-align: start;
+    }
+}
+svg {
+    fill: $light-grey;
+}
+.footer-icons {
+    @media (min-width: 600px) {
+        margin-inline-start: auto;   
+    }
+}

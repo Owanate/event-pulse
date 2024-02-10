@@ -1,5 +1,6 @@
 .header {
-    padding-block: 1em;
+    padding-block-start: 1em;
+    padding-block-end: 0em;
     justify-content: space-between;
     align-items: center;
 }
@@ -19,7 +20,6 @@
 
     @include on-event {
         border: 3px solid $brand-color;
-        padding: 0.3em;
         border-radius: 0.3em;
     }
 }
@@ -44,12 +44,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-inline-start: 0em;
 
     @media (min-width: 600px) {
         flex-direction: row;
-        margin-block: 0em;
-        gap: 1em;
+        gap: 1.3em;
     }
 }
 

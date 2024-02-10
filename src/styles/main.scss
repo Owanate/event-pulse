@@ -10,7 +10,12 @@
 @import
   'layout/header',
   'layout/footer',
-  'layout/hero';
+  'layout/hero',
+  'layout/card-container';
 
 @import
-  'components/button';
+  'components/button',
+  'components/card';
+
+@import
+  'pages/home';

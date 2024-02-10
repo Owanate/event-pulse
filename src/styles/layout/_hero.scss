@@ -4,16 +4,40 @@
 }
 
 .hero-content {
-    padding-block-end: 1em;
+    min-height: 75vh;
+    text-align: center;
     h1 {
-        font-size: 1.7rem;
-        margin-block-end: 0.3em;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-block-end: 0.1em;
     }
     p {
-        font-size: 0.8em;
+        font-size: 1.3rem;
         margin-block-end: 0.5em;
+        line-height: 1.25;
     }
     @media (min-width: 600px) {
-        width: 70%;
+        width: 80%;
+        min-height: 50vh;
+        text-align: start;
+        h1 {
+            font-size: 2.7rem;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-block: 0.7em;
+        }
+    }
+    @media(min-width: 800px) {
+        width: 50%;
+        min-height: 70vh;
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.7rem;
+            margin-block-start: 0.7em;
+            margin-block-end: 1.1em;
+        }
     }
 }
