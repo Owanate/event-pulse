@@ -4,33 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EventPulse</title>
-    <link rel="icon" href="public/icon.svg" type="image/x-icon">
+    <link rel="icon" href="public/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="src/styles/main.scss" />
   </head>
   <body>
     <section class="hero">
-      <header>
-        <p class="logo">
-          <a href="index.html"> Event<span>Pulse</span> </a>
-        </p>
-        <a class="skip-link" href='#main'>Skip to main content</a>
-        <nav>
-          <ul>
-            <li><a href="src/pages/about.html">About Us</a></li>
-            <li><a href="src/pages/events.html">Events</a></li>
-            <li><a href="src/pages/contact.html">Contact Us</a></li>
+      <header class="header flex container">
+        <a href="index.html" class="logo"> Event<span>Pulse</span> </a>
+        <!-- <a class="skip-link" href="#main">Skip to main content</a> -->
+        <button
+          class="nav-toggle"
+          aria-label="open navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <nav class="navbar">
+          <ul class="nav-list  flex">
+            <li class="nav-item">
+              <a href="src/pages/about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="src/pages/events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="src/pages/contact.html" class="nav-link">Contact Us</a>
+            </li>
           </ul>
         </nav>
       </header>
 
       <!-- Hero -->
-      <div id="main">
-        <h1>Discover Your City's Vibrant Events</h1>
-        <p>
-          Find and experience local events tailored to your interests. Where
-          local meets extraordinary, uncover hidden gems in your area and embark
-          on a journey of experiences.
-        </p>
-        <button>Explore Events</button>
+      <div id="main" class="container">
+        <article class="hero-content">
+          <h1>Discover Your City's Vibrant Events</h1>
+          <p>
+            Find and experience local events tailored to your interests. Where
+            local meets extraordinary, uncover hidden gems in your area and embark
+            on a journey of experiences.
+          </p>
+          <button class="cta-btn">Explore Events</button>
+        </article>
       </div>
     </section>
 
@@ -38,7 +65,9 @@
     <section>
       <h2>Browse Featured Events</h2>
       <p>
-        Don't miss out on these upcoming events that are making waves in the scene. Dive in, discover something new, and make the most of your local experience with EventPulse.
+        Don't miss out on these upcoming events that are making waves in the
+        scene. Dive in, discover something new, and make the most of your local
+        experience with EventPulse.
       </p>
       <ul class="card-container">
         <li>
@@ -120,7 +149,9 @@
     <section>
       <h2>Explore the Best of What's Happening Near You</h2>
       <p>
-        Whether you're into music festivals, art exhibitions, or food markets we've handpicked the must-attend events to keep you entertained. Join us and experience the pulse of your community like never before.
+        Whether you're into music festivals, art exhibitions, or food markets
+        we've handpicked the must-attend events to keep you entertained. Join us
+        and experience the pulse of your community like never before.
       </p>
       <button>Join the Fun</button>
     </section>
@@ -129,7 +160,9 @@
     <section>
       <h2>Discover Local Events</h2>
       <p>
-        From iconic landmarks to hidden gems, uncover the best of the city's cultural, historical, and natural wonders, embark on unforgettable adventures and create lasting memories
+        From iconic landmarks to hidden gems, uncover the best of the city's
+        cultural, historical, and natural wonders, embark on unforgettable
+        adventures and create lasting memories
       </p>
       <ul class="card-container">
         <li>
@@ -183,7 +216,9 @@
       </div>
       <hr />
       <div>
-        <p>&copy; <span id="year"></span> EventPulse, Inc. All rights reserved.</p>
+        <p>
+          &copy; <span id="year"></span> EventPulse, Inc. All rights reserved.
+        </p>
         <ul>
           <li>
             <a href="" aria-label="Go to Github">
@@ -227,5 +262,12 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      document.querySelector(".nav-toggle").addEventListener("click", () => {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("navbar--visible");
+      });
+    </script>
   </body>
 </html>

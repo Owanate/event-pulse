@@ -1,0 +1,19 @@
+.hero {
+    background: url('../../../public/home-hero.jpg') center center/cover no-repeat;
+    color: $light-grey;
+}
+
+.hero-content {
+    padding-block-end: 1em;
+    h1 {
+        font-size: 1.7rem;
+        margin-block-end: 0.3em;
+    }
+    p {
+        font-size: 0.8em;
+        margin-block-end: 0.5em;
+    }
+    @media (min-width: 600px) {
+        width: 70%;
+    }
+}
