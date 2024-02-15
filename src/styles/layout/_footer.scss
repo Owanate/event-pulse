@@ -30,7 +30,7 @@
         font-size: 1.3rem;
     }
 }
-hr.line{
+hr.divider{
     border: 1px solid  $mid-grey;
 }
 .footer-end {
@@ -41,10 +41,10 @@ hr.line{
         text-align: start;
     }
 }
-svg {
-    fill: $light-grey;
-}
 .footer-icons {
+    svg {
+        fill: $light-grey;
+    }
     @media (min-width: 600px) {
         margin-inline-start: auto;   
     }
