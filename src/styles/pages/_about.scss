@@ -51,9 +51,9 @@
 .service-details, .core-values {
     padding: 1em;
     @include background;
-    ul {
-        list-style-image: url('../../../public/patch-check.svg');
-        padding-inline-start: 0.5em;
+    svg{
+        margin-inline-start: 0.3em;
+        margin-inline-end: 0.2em;
     }
     @media (min-width: 800px) {
         width: 50%;
