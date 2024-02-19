@@ -45,3 +45,11 @@
         border: 2px solid $light-grey;
     }
 }
+
+.event-header {
+    .nav-toggle {
+        @include on-event {
+            border: 2px solid #000;
+        }
+    }
+}

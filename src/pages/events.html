@@ -4,107 +4,279 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EventPulse</title>
-    <link rel="icon" href="../../public/icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./../styles/main.scss">
+    <link rel="icon" href="../../public/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./../styles/main.scss" />
   </head>
   <body>
-    <header>
-      <p class="logo">
-        <a href="../../index.html"> Event<span>Pulse</span> </a>
-      </p>
-      <a class="skip-link" href='#main'>Skip to main content</a>
-      <nav>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+    <header class="container flex header event-header">
+      <a href="../../index.html" class="logo"> <span>Event</span>Pulse </a>
+      <!-- <a class="skip-link" href='#main'>Skip to main content</a> -->
+      <button
+        class="nav-toggle"
+        aria-label="open navigation"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+      <nav class="navbar">
+        <ul class="flex nav-list">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main id="main">
       <!-- Hero -->
-      <section>
-        <h1>Amazing events on your way</h1>
-        <p>Navigate the event landscape effortlessly. Explore the possibilities and nestle into the best events near you.</p>
+      <section class="container event-hero">
+        <div class="event-content grid">
+          <h1>Don't believe what they say. Explore and See!</h1>
+          <p>
+            Navigate the event landscape effortlessly. Explore the possibilities
+            and nestle into the best events near you. Discover event titles,
+            dates, locations, and brief descriptions, giving you a glimpse into
+            the incredible experiences that lie ahead.
+          </p>
+        </div>
       </section>
 
       <!-- Events -->
-      <section>
-        <div>
-            <ul>
-                <li>Art</li>
-                <li>Fairs & Festivals</li>
-                <li>Film</li>
-                <li>Food & Drink</li>
-                <li>Sports</li>
-                <li>Theatre</li>
-            </ul>
+      <section class="container flex event-container">
+        <div class="mobile flex">
+          <h2>Ready to embark on an adventure?</h2>
+          <select class="form-select" aria-label="Choose event category">
+            <option default>Choose a category</option>
+            <option>Art</option>
+            <option>Fairs & Festivals</option>
+            <option>Film</option>
+            <option>Food & Drink</option>
+            <option>Sports</option>
+            <option>Theatre</option>
+          </select>
         </div>
-        <div>
-            <ul class="card-container">
-                <li>
-                    <a href="" class="card">
-                        <img src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg" alt="">
-                        <div>
-                            <h3>Bellagio Gallery of Fine Art</h3>
-                            <p class="date">Saturday, March 18 9:30PM</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card">
-                        <img src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg" alt="">
-                        <div>
-                            <h3>Bellagio Gallery of Fine Art</h3>
-                            <p class="date">Saturday, March 18 9:30PM</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card">
-                        <img src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg" alt="">
-                        <div>
-                            <h3>Bellagio Gallery of Fine Art</h3>
-                            <p class="date">Saturday, March 18 9:30PM</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="card">
-                        <img src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg" alt="">
-                        <div>
-                            <h3>Bellagio Gallery of Fine Art</h3>
-                            <p class="date">Saturday, March 18 9:30PM</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+        <div class="categories">
+          <h2>Categories</h2>
+          <ul>
+            <li class="flex tab-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-brilliance"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+                width="30"
+                height="30"
+              >
+                <path
+                  d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16M1 8a7 7 0 0 0 7 7 3.5 3.5 0 1 0 0-7 3.5 3.5 0 1 1 0-7 7 7 0 0 0-7 7"
+                />
+              </svg>
+              <span>Art</span>
+            </li>
+            <li class="flex tab-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-camera2"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+                width="30"
+                height="30"
+              >
+                <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4" />
+                <path
+                  d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.97 5.97 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0"
+                />
+              </svg>
+              <span>Fairs & Festivals</span>
+            </li>
+            <li class="flex tab-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-camera-reels"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+                width="30"
+                height="30"
+              >
+                <path
+                  d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
+                />
+                <path
+                  d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
+                />
+                <path
+                  d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                />
+              </svg>
+              <span>Film</span>
+            </li>
+            <li class="flex tab-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                width="30"
+                height="30"
+              >
+                <path
+                  d="M4.22235 3.80753L10.9399 10.525L8.11144 13.3535L4.22235 9.46438C2.66026 7.90229 2.66026 5.36963 4.22235 3.80753ZM14.2683 12.1464L13.4147 12.9999L20.4858 20.071L19.0716 21.4852L12.0005 14.4141L4.92946 21.4852L3.51525 20.071L12.854 10.7322C12.2664 9.27525 12.8738 7.1769 14.4754 5.5753C16.428 3.62268 19.119 3.1478 20.4858 4.51464C21.8526 5.88147 21.3778 8.57242 19.4251 10.525C17.8235 12.1267 15.7252 12.7341 14.2683 12.1464Z"
+                ></path>
+              </svg>
+              <span>Food & Drink</span>
+            </li>
+            <li class="flex tab-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                width="30"
+                height="30"
+              >
+                <path
+                  d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12.366 13.366L8.89708 19.376C9.85124 19.7779 10.8997 20 12 20C12.4622 20 12.9152 19.9608 13.3559 19.8856C13.0984 18.0632 13.3411 16.1601 14.1404 14.3917L12.366 13.366ZM15.8835 15.3974C15.3519 16.6567 15.1671 17.9943 15.2969 19.2905C16.5173 18.7384 17.5737 17.8888 18.3745 16.8346L15.8835 15.3974ZM8.85855 11.3422C7.7265 12.919 6.1993 14.0809 4.49366 14.7699C5.0255 16.2135 5.96211 17.4604 7.16543 18.3745L10.634 12.366L8.85855 11.3422ZM19.9616 11.2111L19.7038 11.3328C18.6197 11.8687 17.6478 12.6548 16.8834 13.6653L19.3756 15.1039C19.7777 14.1495 20 13.1007 20 12C20 11.7338 19.987 11.4706 19.9616 11.2111ZM4 12C4 12.2662 4.013 12.5294 4.03841 12.7889C5.22626 12.2534 6.29168 11.4249 7.11596 10.3355L4.62402 8.89708C4.22214 9.85124 4 10.8997 4 12ZM16.8346 5.62552L13.366 11.634L15.1407 12.6588C16.2731 11.0812 17.8009 9.91878 19.5073 9.22969C19.0134 7.89068 18.1702 6.71922 17.0884 5.82653L16.8346 5.62552ZM12 4C11.5375 4 11.0841 4.03925 10.6431 4.1146C10.9016 5.93748 10.6588 7.8408 9.85915 9.60931L11.634 10.634L15.1029 4.62402C14.1488 4.22214 13.1003 4 12 4ZM8.70313 4.70955L8.51189 4.79845C7.37266 5.35126 6.38436 6.16644 5.62552 7.16543L8.11608 8.60349C8.64798 7.34403 8.83295 6.00607 8.70313 4.70955Z"
+                ></path>
+              </svg>
+              <span>Sports</span>
+            </li>
+            <li class="flex tab-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                width="30"
+                height="30"
+              >
+                <path
+                  d="M12 20H20V22H12C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 14.2512 21.2561 16.3287 20.0007 18H17.2916C18.9525 16.5341 20 14.3894 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 10C10.8954 10 10 9.10457 10 8C10 6.89543 10.8954 6 12 6C13.1046 6 14 6.89543 14 8C14 9.10457 13.1046 10 12 10ZM8 14C6.89543 14 6 13.1046 6 12C6 10.8954 6.89543 10 8 10C9.10457 10 10 10.8954 10 12C10 13.1046 9.10457 14 8 14ZM16 14C14.8954 14 14 13.1046 14 12C14 10.8954 14.8954 10 16 10C17.1046 10 18 10.8954 18 12C18 13.1046 17.1046 14 16 14ZM12 18C10.8954 18 10 17.1046 10 16C10 14.8954 10.8954 14 12 14C13.1046 14 14 14.8954 14 16C14 17.1046 13.1046 18 12 18Z"
+                ></path>
+              </svg>
+              <span>Theatre</span>
+            </li>
+          </ul>
+        </div>
+        <div class="event-grid">
+          <h2>Ready to embark on an adventure?</h2>
+          <ul class="event-grid-container grid">
+            <li class="event-card">
+              <img
+                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
+                alt=""
+              />
+              <div class="image-overlay flex">
+                <p class="date">March 18 | Sat</p>
+                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
+              </div>
+            </li>
+            <li class="event-card">
+              <img
+                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
+                alt=""
+              />
+              <div class="image-overlay flex">
+                <p class="date">March 18 | Sat</p>
+                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
+              </div>
+            </li>
+            <li class="event-card">
+              <img
+                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
+                alt=""
+              />
+              <div class="image-overlay flex">
+                <p class="date">March 18 | Sat</p>
+                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
+              </div>
+            </li>
+            <li class="event-card">
+              <img
+                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
+                alt=""
+              />
+              <div class="image-overlay flex">
+                <p class="date">March 18 | Sat</p>
+                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
+              </div>
+            </li>
+            <li class="event-card">
+              <img
+                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
+                alt=""
+              />
+              <div class="image-overlay flex">
+                <p class="date">March 18 | Sat</p>
+                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
+              </div>
+            </li>
+            <li class="event-card">
+              <img
+                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
+                alt=""
+              />
+              <div class="image-overlay flex">
+                <p class="date">March 18 | Sat</p>
+                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div>
-        <p class="logo">
-          <a href="index.html"> Event<span>Pulse</span> </a>
-        </p>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+    <footer class="footer">
+      <div class="container grid">
+        <a href="index.html" class="logo"> Event<span>Pulse</span> </a>
+        <ul class="footer-list flex">
+          <li class="list-item">
+            <a href="src/pages/about.html" class="footer-link">About Us</a>
+          </li>
+          <li class="list-item">
+            <a href="src/pages/events.html" class="footer-link">Events</a>
+          </li>
+          <li class="list-item">
+            <a href="src/pages/contact.html" class="footer-link">Contact Us</a>
+          </li>
         </ul>
       </div>
-      <hr />
-      <div>
-        <p>&copy; <span id="year"></span> EventPulse, Inc. All rights reserved.</p>
-        <ul>
-          <li>
+      <hr class="divider" />
+      <div class="container flex footer-end">
+        <p>
+          &copy; <span id="year"></span> EventPulse, Inc. All rights reserved.
+        </p>
+        <ul class="flex footer-icons">
+          <li class="list-icon">
             <a href="" aria-label="Go to Github">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
+                width="30"
+                height="30"
               >
                 <path
                   d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
@@ -112,12 +284,14 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="list-icon">
             <a href="" aria-label="Go to Twitter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
+                width="30"
+                height="30"
               >
                 <path
                   d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
@@ -125,12 +299,14 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="list-icon">
             <a href="" aria-label="Go to Discord">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
+                width="30"
+                height="30"
               >
                 <path
                   d="M19.3034 5.33716C17.9344 4.71103 16.4805 4.2547 14.9629 4C14.7719 4.32899 14.5596 4.77471 14.411 5.12492C12.7969 4.89144 11.1944 4.89144 9.60255 5.12492C9.45397 4.77471 9.2311 4.32899 9.05068 4C7.52251 4.2547 6.06861 4.71103 4.70915 5.33716C1.96053 9.39111 1.21766 13.3495 1.5891 17.2549C3.41443 18.5815 5.17612 19.388 6.90701 19.9187C7.33151 19.3456 7.71356 18.73 8.04255 18.0827C7.41641 17.8492 6.82211 17.5627 6.24904 17.2231C6.39762 17.117 6.5462 17.0003 6.68416 16.8835C10.1438 18.4648 13.8911 18.4648 17.3082 16.8835C17.4568 17.0003 17.5948 17.117 17.7434 17.2231C17.1703 17.5627 16.576 17.8492 15.9499 18.0827C16.2789 18.73 16.6609 19.3456 17.0854 19.9187C18.8152 19.388 20.5875 18.5815 22.4033 17.2549C22.8596 12.7341 21.6806 8.80747 19.3034 5.33716ZM8.5201 14.8459C7.48007 14.8459 6.63107 13.9014 6.63107 12.7447C6.63107 11.5879 7.45884 10.6434 8.5201 10.6434C9.57071 10.6434 10.4303 11.5879 10.4091 12.7447C10.4091 13.9014 9.57071 14.8459 8.5201 14.8459ZM15.4936 14.8459C14.4535 14.8459 13.6034 13.9014 13.6034 12.7447C13.6034 11.5879 14.4323 10.6434 15.4936 10.6434C16.5442 10.6434 17.4038 11.5879 17.3825 12.7447C17.3825 13.9014 16.5548 14.8459 15.4936 14.8459Z"
