@@ -12,7 +12,7 @@
         border: 2px solid $light-grey;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 40em) {
         display: none;
     }
 }
@@ -23,12 +23,33 @@
     font-weight: bold;
     font-size: 1.1rem;
     border: 0;
-    border-radius: 0.3em;
+    border-radius: 0.5em;
     padding: 0.5em 0.7em;
     @include on-event {
         border: 2px solid $light-grey;
     }
-    @media (min-width: 800px) {
+    @media (min-width: 60em) {
         font-size: 1.4rem;
+    }
+}
+
+.btn {
+    background-color: $background-color;
+    color: $light-grey;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 1.3em;
+    padding: 0.5em 1.5em;
+    @include on-event {
+        border: 2px solid $light-grey;
+    }
+}
+
+.event-header {
+    .nav-toggle {
+        @include on-event {
+            border: 2px solid #000;
+        }
     }
 }

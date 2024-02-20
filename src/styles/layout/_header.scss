@@ -5,11 +5,6 @@
     align-items: center;
 }
 
-.hero {
-    background: url('../../../public/home-hero.jpg') center center/cover no-repeat;
-    color: $light-grey;
-}
-
 .logo {
     color: $light-grey;
     font-weight: 600;
@@ -27,7 +22,7 @@
 .navbar {
     display: none;
 
-    @media (min-width: 600px) {
+    @media (min-width: 40em) {
         display: block;
     }
 }
@@ -45,7 +40,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 600px) {
+    @media (min-width: 40em) {
         flex-direction: row;
         gap: 1.3em;
     }
@@ -58,17 +53,23 @@
         padding-block-end: 0em;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 40em) {
         padding-block-end: 0em;
     }
 }
 .nav-link {
     color: $light-grey;
     font-weight: 600;
-
+    font-size: var(--fs-400);
     @include on-event {
         background-color: $brand-color;
         padding: 0.3em;
         border-radius: 0.3em;
+    }
+}
+
+.event-header {
+    .logo, .nav-link {
+        color: #000;
     }
 }

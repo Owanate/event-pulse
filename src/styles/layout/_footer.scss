@@ -19,33 +19,33 @@
 .footer-link {
     color: $light-grey;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: var(--fs-400);
 
     @include on-event {
         background-color: $brand-color;
         padding: 0.3em;
         border-radius: 0.3em;
     }
-    @media (min-width: 600px) {
+    @media (min-width: 40em) {
         font-size: 1.3rem;
     }
 }
-hr.line{
+hr.divider{
     border: 1px solid  $mid-grey;
 }
 .footer-end {
     flex-direction: column;
     text-align: center;
-    @media(min-width: 600px) {
+    @media(min-width: 40em) {
         flex-direction: row;
         text-align: start;
     }
 }
-svg {
-    fill: $light-grey;
-}
 .footer-icons {
-    @media (min-width: 600px) {
+    svg {
+        fill: $light-grey;
+    }
+    @media (min-width: 40em) {
         margin-inline-start: auto;   
     }
 }

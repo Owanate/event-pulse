@@ -1,14 +1,11 @@
-body {
-    background-color: $light-grey;
-}
 .container {
-    width: min(100% - 3rem, 75rem);
-    margin-inline: auto;
-    padding-block: 1.7em;
+  width: min(100% - 3rem, 75rem);
+  margin-inline: auto;
+  padding-block: 1.7em;
 
-    @media (min-width: 600px) {
-        width: min(100% - 7rem, 75rem)
-    }
+  @media (min-width: 40em) {
+    width: min(100% - 7rem, 75rem)
+  }
 }
 
 .flex {
@@ -19,4 +16,15 @@ body {
 .grid {
 	display: grid;
 	gap: 2rem;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

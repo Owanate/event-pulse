@@ -11,11 +11,14 @@
   'layout/header',
   'layout/footer',
   'layout/hero',
-  'layout/card-container';
+  'layout/grid';
 
 @import
   'components/button',
   'components/card';
 
 @import
-  'pages/home';
+  'pages/home',
+  'pages/about',
+  'pages/contact',
+  'pages/events';
