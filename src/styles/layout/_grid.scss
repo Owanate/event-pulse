@@ -1,17 +1,17 @@
 .card-container {
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
     margin-block-start: 0.8em;
     justify-content: center;
 }
 
 .card-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     margin-block-start: 1em;
     justify-content: center;
 }
 
 .event-grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
     margin-block-start: 1em;
     gap: 0.5em;
     justify-content: center;

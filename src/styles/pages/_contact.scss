@@ -4,13 +4,13 @@
     background-blend-mode: darken;
     color: $light-grey;
     
-    @media (min-width: 800px) {
+    @media (min-width: 60em) {
         padding-inline: 3em;
     } 
 }
 .main-contact {
     flex-direction: column;
-    @media (min-width: 800px) {
+    @media (min-width: 60em) {
         flex-direction: row;
     }  
 }
@@ -18,7 +18,7 @@
     background: url('../../../public/about-bg.svg');
     padding: 1em 0.6em 1em 1em;
     border-radius: 0.3em;
-    @media (min-width: 800px) {
+    @media (min-width: 60em) {
         width: 40%;
     }
 }
@@ -68,11 +68,11 @@
     .grid {
         margin-block-start: 0.8em;
         margin-inline: auto;
-        @media (min-width: 800px) {
+        @media (min-width: 60em) {
             width: 35%;
         }
     }
-    @media (min-width: 800px) {
+    @media (min-width: 60em) {
         width: 60%
     }
 }

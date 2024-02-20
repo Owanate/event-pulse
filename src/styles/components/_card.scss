@@ -2,6 +2,9 @@
     background-color: #fff;
     padding: 0.7em;
     border-radius: 0.3em;
+    h3 {
+        font-size: var(--fs-600);
+    }
     img {
         border-radius: 0.3em;
     }
@@ -38,14 +41,14 @@
         width: 150px;
         border: 3px solid #fff;
         border-radius: 1.2em;
-        padding: 0.1em 0.7em;
+        padding: 0.2em 1em;
         background-color: $background-color;
         text-align: center;
     }
     a {
         color: $light-grey;
         font-weight: 600;
-        font-size: 1.3rem;
+        font-size: var(--fs-600);
     }
 }
 
@@ -70,13 +73,13 @@
     border-radius: 0.5em;
     background-color: rgba(0, 0, 0, 0.5);
     h3 {
-        font-size: 1.5rem;
+        font-size: var(--fs-600);
     }
     a {
         color: $light-grey;
     }
     .date {
         color: $light-grey;
-        font-size: 1.2rem;
+        font-size: var(--fs-400);
     }
 }

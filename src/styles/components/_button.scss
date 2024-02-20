@@ -12,7 +12,7 @@
         border: 2px solid $light-grey;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 40em) {
         display: none;
     }
 }
@@ -28,7 +28,7 @@
     @include on-event {
         border: 2px solid $light-grey;
     }
-    @media (min-width: 800px) {
+    @media (min-width: 60em) {
         font-size: 1.4rem;
     }
 }
