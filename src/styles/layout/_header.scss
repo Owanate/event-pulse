@@ -1,14 +1,15 @@
 .header {
-    padding-block-start: 1em;
-    padding-block-end: 0em;
     justify-content: space-between;
     align-items: center;
+    padding-block-start: 1em;
+    padding-block-end: 0em;
 }
 
 .logo {
     color: $light-grey;
     font-weight: 600;
     font-size: 1.5rem;
+
     span {
         color: $brand-color;
     }
@@ -26,6 +27,7 @@
         display: block;
     }
 }
+
 .navbar--visible {
     display: block;
     position: absolute;
@@ -57,14 +59,15 @@
         padding-block-end: 0em;
     }
 }
+
 .nav-link {
     color: $light-grey;
     font-weight: 600;
     font-size: var(--fs-400);
     @include on-event {
-        background-color: $brand-color;
         padding: 0.3em;
         border-radius: 0.3em;
+        background-color: $brand-color;
     }
 }
 

@@ -19,12 +19,27 @@
 }
 
 .visually-hidden {
-  border: 0;
   clip: rect(0 0 0 0);
+  width: 1px;
   height: 1px;
   margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
-  width: 1px;
+  overflow: hidden;
+  padding: 0em;
+  border: 0em;
+}
+
+.skip-link {
+  position: absolute;
+  left: 40%;
+  transform: translateY(-500%);
+  transition: transform 250ms ease-in;
+  padding: .5em 1em;
+  color: $light-grey; 
+  font-weight: 700;
+  font-size: var(--fs-400);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
 }

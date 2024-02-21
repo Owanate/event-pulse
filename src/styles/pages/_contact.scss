@@ -8,36 +8,46 @@
         padding-inline: 3em;
     } 
 }
+
 .main-contact {
     flex-direction: column;
+
     @media (min-width: 60em) {
         flex-direction: row;
     }  
 }
+
 .contact-info {
-    background: url('../../../public/about-bg.svg');
     padding: 1em 0.6em 1em 1em;
     border-radius: 0.3em;
+    background: url('../../../public/about-bg.svg');
+
     @media (min-width: 60em) {
         width: 40%;
     }
 }
+
 .info-heading {
     margin-block-end: 0.8em;
+
     p {
         font-size: 1rem;
     }
 }
+
 .info-group {
     margin-block-end: 0.5em;
+
     h3 {
         font-size: 1.3rem;
         font-weight: 600;
     }
+
     a {
         color: $light-grey;
         font-size: 1rem;
         font-weight: 500; 
+
         @include on-event {
             padding: 0.1em;
             border-radius: 0.3em;
@@ -45,45 +55,55 @@
         }
     }
 }
+
 .info {
     font-size: 0.9rem;
 }
+
 .address {
     font-size: 1rem;
     font-weight: 500;
 }
+
 .list-icons {
     margin-block-start: 0.5em;
+
     svg {
         fill: $light-grey;
     }
 }
 
 .contact-form {
-    @include background;
     padding: 1em;
+    @include background;
+
     .btn {
         background-color: $brand-color;
     }
+
     .grid {
         margin-block-start: 0.8em;
         margin-inline: auto;
+
         @media (min-width: 60em) {
             width: 35%;
         }
     }
+
     @media (min-width: 60em) {
         width: 60%
     }
 }
 .input-group {
     margin-block-end: 0.5em;
+
     label {
         display: inline-block;
         margin-block-end: 0.3em;
         font-size: 1rem;
         font-weight: 600;
     }
+
     input, textarea {
         display: block;
         width: 100%;
@@ -92,18 +112,22 @@
         @include background;
         font-size: 1rem;
         color: $light-grey;
+
         @include on-event {
             border: 2px solid $brand-color;
         }
     }
 }
+
 .disclaimer {
     margin-block-start: 0.7em;
     font-size: 1rem;
     text-align: center;
+
     a {
         color: $light-grey;
         font-weight: 700;
+
         @include on-event {
             padding: 0.1em;
             border-radius: 0.3em;

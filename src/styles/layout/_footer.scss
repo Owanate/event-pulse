@@ -1,16 +1,20 @@
 .footer {
     background-color: $background-color;
     color: $light-grey;
+
     .grid {
         justify-content: center;
         gap: 0.5em;
     }
+
     .logo {
         text-align: center;
     }
+
     p {
         font-size: 1.1rem;
     }
+
     .flex {
         align-items: center;
     }
@@ -22,17 +26,20 @@
     font-size: var(--fs-400);
 
     @include on-event {
-        background-color: $brand-color;
         padding: 0.3em;
         border-radius: 0.3em;
+        background-color: $brand-color;
     }
+
     @media (min-width: 40em) {
         font-size: 1.3rem;
     }
 }
+
 hr.divider{
     border: 1px solid  $mid-grey;
 }
+
 .footer-end {
     flex-direction: column;
     text-align: center;
@@ -41,10 +48,12 @@ hr.divider{
         text-align: start;
     }
 }
+
 .footer-icons {
     svg {
         fill: $light-grey;
     }
+    
     @media (min-width: 40em) {
         margin-inline-start: auto;   
     }

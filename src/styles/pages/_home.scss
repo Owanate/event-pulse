@@ -1,16 +1,20 @@
 .section-heading {
     text-align: center;
+
     h2 {
         font-size: var(--fs-700);
     }
+
     p {
         color: $dark-grey;
         font-weight: 500;
         font-size: var(--fs-400);
     }
+
     @media (min-width: 40em) {
         text-align: start;
     }
+
     @media (min-width: 60em) {
         width: 70%;
     }
@@ -19,14 +23,16 @@
 .banner {
     background-color: $background-color;
     color: $light-grey;
+
     @media (min-width: 40em) {
         .grid {
             grid-template-columns: 40% 60%;
-            gap: 0em;
             align-items: center;
+            gap: 0em;
         }
     }
 }
+
 .banner-image {
     @media (min-width: 40em) {
         img {
@@ -34,16 +40,20 @@
         }
     }
 }
+
 .banner-details {
     text-align: center;
+    
     h2 {
         font-size: var(--fs-700);
     }
+
     p {
+        padding-block: 0.5em;
         font-weight: 500;
         font-size: var(--fs-400);
-        padding-block: 0.5em;
     }
+
     @media (min-width: 40em) {
         text-align: start;
     }
