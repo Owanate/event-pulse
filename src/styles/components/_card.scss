@@ -1,4 +1,7 @@
 .card {
+    position: relative;
+    flex-direction: column;
+    gap: 0em;
     padding: 0.7em;
     border-radius: 0.3em;
     background-color: #fff;
@@ -10,10 +13,40 @@
     img {
         border-radius: 0.3em;
     }
+
+    a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    @include on-event {
+        border: 3px solid $brand-color;
+        border-radius: 0.3em;
+    }
+
 }
 
 .details {
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0em;
     padding-block-start: 0.5em;
+
+    & > * + * {
+        margin-top: 0.5em;
+    }
+
+    &:last-child {
+        margin-top: auto;
+    }
+
+    &:nth-last-child(2) {
+        margin-bottom: 0.75rem;
+    }
 }
 
 .date {
@@ -51,24 +84,58 @@
         border-radius: 1.2em;
         background-color: $background-color;
         text-align: center;
+
+        @include on-event {
+            border: 3px solid $background-color;
+            background-color: #fff;
+        }
     }
 
     a {
         color: $light-grey;
         font-weight: 600;
         font-size: var(--fs-600);
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        @include on-event {
+            color: $background-color;
+        }
     }
 }
 
 .event-card {
     position: relative;
+
     img {
-        height: 12em;
+        height: 18em;
         width: 100%;
         border-radius: 0.5em;
         object-fit: cover;
     }
+
+    a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    @include on-event {
+        border: 5px solid $brand-color;
+        border-radius: 0.3em;
+    }
 }
+
 .image-overlay {
     position: absolute;
     left: 0;

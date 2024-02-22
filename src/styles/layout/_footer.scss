@@ -58,3 +58,13 @@ hr.divider{
         margin-inline-start: auto;   
     }
 }
+
+.list-icon {
+    a {
+        @include on-event {
+            padding: 0.1em;
+            border-radius: 0.3em;
+            border: 2px solid $light-grey;
+        }
+    }
+}
