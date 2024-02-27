@@ -56,3 +56,28 @@
         }
     }
 }
+
+.tab-link {
+    align-items: center;
+    gap: 0.7em;
+    margin-block-end: 1.7em;
+    border: none;
+    background-color: transparent;
+
+    span {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    @include on-event {
+        border: 2px solid $brand-color;
+        border-radius: 1em;
+        padding: 0.2em;
+    }
+}
+
+[aria-selected="true"] {
+    border: 2px solid $brand-color;
+    border-radius: 1em;
+    padding: 0.2em;
+}

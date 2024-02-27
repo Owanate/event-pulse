@@ -58,17 +58,6 @@
     }
 }
 
-.tab-link {
-    align-items: center;
-    gap: 0.7em;
-    margin-block-end: 1.7em;
-
-    span {
-        font-size: 1.3rem;
-        font-weight: 600;
-    }
-}
-
 .event-grid {
     padding: 1em;
     border-radius: 0.5em;
@@ -79,6 +68,7 @@
 
         @media (min-width: 60em) {
             display: block;
+            margin-block-end: 1em;
         }
     }
     
