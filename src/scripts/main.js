@@ -8,7 +8,7 @@ const Apikey = "LRdxrCLIL0c60Ckh4XHfuZkTAUHk3IfO";
 
 function formatDate(dateString) {
   let dateObj = new Date(dateString);
-  let monthNames = [
+  let months = [
     "January",
     "February",
     "March",
@@ -22,7 +22,7 @@ function formatDate(dateString) {
     "November",
     "December",
   ];
-  let dayNames = [
+  let days = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -31,10 +31,10 @@ function formatDate(dateString) {
     "Friday",
     "Saturday",
   ];
-  let dayOfWeek = dateObj.getDay();
-  let monthName = monthNames[dateObj.getMonth()];
-  let dayOfMonth = dateObj.getDate();
-  return dayNames[dayOfWeek] + ", " + monthName + " " + dayOfMonth;
+  let day = dateObj.getDay();
+  let month = months[dateObj.getMonth()];
+  let date = dateObj.getDate();
+  return `${days[day]}, ${month} ${date}`;
 }
 
 function featuredEvents() {
@@ -86,5 +86,4 @@ function attractions() {
   }
 }
 
-featuredEvents();
-attractions();
+$( featuredEvents(), attractions() );

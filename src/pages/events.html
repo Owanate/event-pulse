@@ -205,123 +205,24 @@
         </div>
         <div class="event-grid">
           <h2>Ready to embark on an adventure?</h2>
-          <ul
-            class="event-grid-container grid content-box"
-            role="tabpanel"
-            id="panel1"
-            role="tabpanel"
-            aria-labelledby="tab1"
-            tabindex="0"
-          >
-            <li class="event-card">
-              <img
-                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
-                alt=""
-              />
-              <div class="image-overlay flex">
-                <p class="date">March 18 | Sat</p>
-                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
-              </div>
-            </li>
-            <li class="event-card">
-              <img
-                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
-                alt=""
-              />
-              <div class="image-overlay flex">
-                <p class="date">March 18 | Sat</p>
-                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
-              </div>
-            </li>
-            <li class="event-card">
-              <img
-                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
-                alt=""
-              />
-              <div class="image-overlay flex">
-                <p class="date">March 18 | Sat</p>
-                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
-              </div>
-            </li>
-            <li class="event-card">
-              <img
-                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
-                alt=""
-              />
-              <div class="image-overlay flex">
-                <p class="date">March 18 | Sat</p>
-                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
-              </div>
-            </li>
-            <li class="event-card">
-              <img
-                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
-                alt=""
-              />
-              <div class="image-overlay flex">
-                <p class="date">March 18 | Sat</p>
-                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
-              </div>
-            </li>
-            <li class="event-card">
-              <img
-                src="https://s1.ticketm.net/dam/a/0f2/833ad8ae-c65e-4222-8b1e-920bfa7ed0f2_1375141_RETINA_LANDSCAPE_16_9.jpg"
-                alt=""
-              />
-              <div class="image-overlay flex">
-                <p class="date">March 18 | Sat</p>
-                <h3><a href="">Bellagio Gallery of Fine Art</a></h3>
-              </div>
-            </li>
-          </ul>
-          <ul
-            class="event-grid-container grid content-box"
-            id="panel2"
-            role="tabpanel"
-            aria-labelledby="tab2"
-            hidden
-            tabindex="-1"
-          ></ul>
-          <ul
-            class="event-grid-container grid content-box"
-            id="panel2"
-            role="tabpanel"
-            aria-labelledby="tab2"
-            hidden
-            tabindex="-1"
-          ></ul>
-          <ul
-            class="event-grid-container grid content-box"
-            id="panel3"
-            role="tabpanel"
-            aria-labelledby="tab3"
-            hidden
-            tabindex="-1"
-          ></ul>
-          <ul
-            class="event-grid-container grid content-box"
-            id="panel4"
-            role="tabpanel"
-            aria-labelledby="tab4"
-            hidden
-            tabindex="-1"
-          ></ul>
-          <ul
-            class="event-grid-container grid content-box"
-            id="panel5"
-            role="tabpanel"
-            aria-labelledby="tab5"
-            hidden
-            tabindex="-1"
-          ></ul>
-          <ul
-            class="event-grid-container grid content-box"
-            id="panel6"
-            role="tabpanel"
-            aria-labelledby="tab6"
-            hidden
-            tabindex="-1"
-          ></ul>
+          <section class=" tab-panel" role="tabpanel" id="panel1" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+            <ul class="event-grid-container grid" id="art-grid"></ul>
+          </section>
+          <section class="tab-panel" id="panel2" role="tabpanel" aria-labelledby="tab2" hidden tabindex="-1">
+            <ul class="event-grid-container grid" id="fair-grid"></ul>
+          </section>
+          <section class="tab-panel" id="panel3" role="tabpanel" aria-labelledby="tab3" hidden tabindex="-1">
+            <ul class="event-grid-container grid" id="film-grid"></ul>
+          </section>
+          <section class="tab-panel" id="panel4" role="tabpanel" aria-labelledby="tab4" hidden tabindex="-1">
+            <ul class="event-grid-container grid" id="food-grid"></ul>
+          </section>
+          <section class="tab-panel" id="panel5" role="tabpanel" aria-labelledby="tab5" hidden tabindex="-1">
+            <ul class="event-grid-container grid" id="sport-grid"></ul>
+          </section>
+          <section class="tab-panel" id="panel6" role="tabpanel" aria-labelledby="tab6" hidden tabindex="-1">
+            <ul class="event-grid-container grid" id="theatre-grid"></ul>
+          </section>
         </div>
       </section>
     </main>
@@ -408,7 +309,7 @@
       </div>
     </footer>
 
-    <script src="../scripts/main.js" type="module"></script>
+    <script src="../scripts/events.js" type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
