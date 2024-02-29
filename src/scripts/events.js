@@ -78,6 +78,26 @@ function getEvents(event, wrapper) {
   );
 }
 
+function showTabFromURL() {
+  // Get the tab parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const tabParam = urlParams.get("tab");
+  console.log(tabParam);
+  if (tabParam) {
+    // Remove 'aria-selected' attribute from all tab-links and hide all tab-panels
+    $(".tab-link").attr("aria-selected", "false").attr("tabindex", "-1");
+    $(".tab-panel").attr("hidden", true).attr("tabindex", "-1");
+
+    // Show the tab-panel corresponding to the tabParam
+    $(`.tab-link[data-category="${tabParam}"]`)
+      .attr("aria-selected", "true")
+      .attr("tabindex", "0");
+    $(`.tab-panel[data-category="${tabParam}"]`)
+      .removeAttr("hidden")
+      .attr("tabindex", "0");
+  }
+}
+
 $(
   showTabContent(),
   getEvents("family", "#family-grid"),
@@ -85,5 +105,6 @@ $(
   getEvents("film", "#film-grid"),
   getEvents("food%20drink", "#food-grid"),
   getEvents("sports", "#sport-grid"),
-  getEvents("theatre", "#theatre-grid")
+  getEvents("theatre", "#theatre-grid"),
+  showTabFromURL()
 );
