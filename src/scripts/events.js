@@ -37,6 +37,23 @@ function showTabContent() {
       .removeAttr("hidden")
       .attr("tabindex", "0");
   });
+  
+  $("#categoriesSelect").change(function () {
+    var selectedCategory = $(this).val();
+    $(".tab-link").attr("aria-selected", "false").attr("tabindex", "-1");
+    $(".tab-panel").attr("hidden", true).attr("tabindex", "-1");
+
+    // Set the corresponding tab as selected
+    $(`.tab-link[data-category="${selectedCategory}"]`)
+      .attr("aria-selected", "true")
+      .attr("tabindex", "0");
+
+    // Show the corresponding tab-panel
+    $(`.tab-panel[data-category="${selectedCategory}"]`)
+      .removeAttr("hidden")
+      .attr("tabindex", "0");
+  });
+
 }
 
 function getEvents(event, wrapper) {
@@ -62,7 +79,7 @@ function getEvents(event, wrapper) {
 
 $(
   showTabContent(),
-  getEvents("family", "#art-grid"),
+  getEvents("family", "#family-grid"),
   getEvents("fairs%20festival", "#fair-grid"),
   getEvents("film", "#film-grid"),
   getEvents("food%20drink", "#food-grid"),
