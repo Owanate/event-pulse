@@ -27,15 +27,6 @@ function formatDate(dateString) {
   return `${month} ${date} | ${days[day]}`;
 }
 
-// let apiUrls = {
-//   tab1: `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=family&apikey=${Apikey}&size=6`,
-//   tab2: `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=fairs%20festivals&apikey=${Apikey}&size=6`,
-//   tab3: `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=film&apikey=${Apikey}&size=6`,
-//   tab4: `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=food%20drink&apikey=${Apikey}&size=6`,
-//   tab5: `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=sports&apikey=${Apikey}&size=6`,
-//   tab6: `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=theatre&apikey=${Apikey}&size=6`,
-// };
-
 function showTabContent() {
   $(".tab-link").click(function () {
     let tabId = $(this).attr("id");
