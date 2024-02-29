@@ -47,7 +47,7 @@ function featuredEvents() {
             <li class="card flex">
               <img src="${data.images[0].url}" alt=""/>
               <div class="details flex">
-                <h3><a href="">${data.name}</a></h3>
+                <h3><a href="${data.url}" target="_blank">${data.name}</a></h3>
                 <p class="date">${formatDate(data.dates.start.localDate)}</p>
                 <p class="venue">${data._embedded.venues[0].name}</p>
               </div>
@@ -86,4 +86,4 @@ function attractions() {
   }
 }
 
-$( featuredEvents(), attractions() );
+$(featuredEvents(), attractions());

@@ -37,7 +37,7 @@ function showTabContent() {
       .removeAttr("hidden")
       .attr("tabindex", "0");
   });
-  
+
   $("#categoriesSelect").change(function () {
     var selectedCategory = $(this).val();
     $(".tab-link").attr("aria-selected", "false").attr("tabindex", "-1");
@@ -53,7 +53,6 @@ function showTabContent() {
       .removeAttr("hidden")
       .attr("tabindex", "0");
   });
-
 }
 
 function getEvents(event, wrapper) {
@@ -62,12 +61,14 @@ function getEvents(event, wrapper) {
     (response) => {
       $.each(response._embedded.events, (index, data) => {
         let card = `
-                <li class="event-card">
+              <li class="event-card">
                 <img src="${data.images[0].url}" alt=""
                 />
                 <div class="image-overlay flex">
                   <p class="date">${formatDate(data.dates.start.localDate)}</p>
-                  <h3><a href="">${data.name}</a></h3>
+                  <h3><a href="${data.url}" target="_blank">${
+          data.name
+        }</a></h3>
                 </div>
               </li>
             `;
