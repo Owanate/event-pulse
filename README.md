@@ -15,16 +15,17 @@ EventPulse is a dynamic and user-friendly website designed to help users discove
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/iphone-screenshot.jpeg)
+![](./public/ipad-screenshot.jpeg)
+![](./public/laptop-screenshot.jpeg)
 
 ### Links
 
 - Solution URL: [Github](https://github.com/Owanate/event-pulse)
 - Live Site URL: [Netlify](https://event-pulse.netlify.app/)
 
-## My Process
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - SASS
@@ -37,16 +38,20 @@ EventPulse is a dynamic and user-friendly website designed to help users discove
 To get started with EventPulse, follow these steps:
 
 1. Clone the repository to your local machine.
+
 ```bash
 git clone https://github.com/Owanate/EventPulse.git
 ```
+
 2. Install Dependencies:
+
 ```bash
 cd EventPulse
 npm install
 ```
 
 3. Run the App:
+
 ```bash
 npm start
 ```
