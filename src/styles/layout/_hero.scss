@@ -1,10 +1,10 @@
 .home-hero {
-    background: url('../../../public/home-hero.jpg') center center/cover no-repeat;
+    background: url('../../public/home-hero.jpg') center center/cover no-repeat;
     color: $light-grey;
 }
 
 .about-hero {
-    background: url('../../../public/about-bg.svg');
+    background: url('../../public/about-bg.svg');
     color: $light-grey;
 }
 
@@ -12,7 +12,7 @@
     padding-block: 1em;
     margin-block-start: 1em;
     border-radius: 0.8em;
-    background: url('../../../public/event-hero.jpg') center center/cover no-repeat;
+    background: url('../../public/event-hero.jpg') center center/cover no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     color: $light-grey;
