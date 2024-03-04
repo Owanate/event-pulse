@@ -20,7 +20,7 @@ EventPulse is a dynamic and user-friendly website designed to help users discove
 ### Links
 
 - Solution URL: [Github](https://github.com/Owanate/event-pulse)
-- Live Site URL: [Netlify]()
+- Live Site URL: [Netlify](https://event-pulse.netlify.app/)
 
 ## My Process
 
